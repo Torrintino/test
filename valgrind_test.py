@@ -73,8 +73,8 @@ if result:
     print("The test failed. You can find the output of valgrind in log.txt")
 else:
     if output_path:
-        diff = subprocess.call(["diff", output_path, "test_output"])
-        if diff:
+        result = subprocess.call(["diff", output_path, "test_output"])
+        if result:
             print("The expected output differs from the actual output")
         else:
             print("Test succeeded")
