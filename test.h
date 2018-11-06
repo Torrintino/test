@@ -32,7 +32,7 @@ void turn_malloc_on();
  ***/
 void turn_malloc_off(unsigned int n);
 
-/*** Calling this optional. It will print a summary and return 
+/*** Calling this optional. It will print a summary to stderr and return 
      TRUE if all tests passed, otherwise FALSE.
  ***/
 int test_finish();

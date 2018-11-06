@@ -38,6 +38,6 @@ void turn_malloc_off(unsigned int n) {
 }
 
 int test_finish() {
-  printf("Passed tests: %d/%d\n", tests_passed, tests_run);
+  fprintf(stderr, "Passed tests: %d/%d\n", tests_passed, tests_run);
   return tests_passed == tests_run;
 }
